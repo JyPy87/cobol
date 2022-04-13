@@ -13,9 +13,27 @@
                    3 rue pic x(30).
                    3 codepostal pic 9(5).
                    3 ville pic x(30).
+       
+       screen section.
+           
+           1 a-plg-titre.
+               2 blank screen.
+               2 line 3 col 15 value "Bienvenue".           
+           
+           1 s-plg-nom.
+               2 line 5 col 8 value "Nom : ".
+               2 pic x(30) to nom required.
+           
+           1 a-plg-nom.
+               2 line 10 col 8 value 'Salut'.
+               2 col 15 pic x(30) from nom.
+          
 
        procedure division.
-           display "Bonjour".
+           display a-plg-titre.
+           display s-plg-nom.
+           accept s-plg-nom.
+           display a-plg-nom.
            stop run.
         
 
