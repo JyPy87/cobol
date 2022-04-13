@@ -14,8 +14,7 @@
                    3 codepostal pic 9(5).
                    3 ville pic x(30).
        
-       screen section.
-           
+       screen section.           
            1 a-plg-titre.
                2 blank screen.
                2 line 3 col 15 value "Bienvenue".           
@@ -28,7 +27,6 @@
                2 line 10 col 8 value 'Salut'.
                2 col 15 pic x(30) from nom.
           
-
        procedure division.
            display a-plg-titre.
            display s-plg-nom.
